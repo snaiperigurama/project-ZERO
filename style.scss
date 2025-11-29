@@ -19,7 +19,7 @@
 
 html{
     scroll-behavior: smooth;
-    transition: all 2s ease-in-out;
+    transition: all 4s ease-in-out;
     body{
         margin: 0;
         z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
@@ -173,6 +173,150 @@ html{
                         margin: 0;
                     }
                 }
+                .log-in{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    a{
+                        font-size: 97px;
+                        color: black;
+                        text-decoration: none;
+                        margin-top: 1.5cm;
+                        margin-bottom: 1.5cm;
+                    }
+                    div{
+                        .inp{
+                            display: flex;
+                            flex-direction: column;
+                            div{
+                                .bar{
+                                    padding-left: 12px;
+                                    width: 618px;
+                                    height: 30px;
+                                    border: solid black 1px;
+                                    border-radius: 0%;
+                                    &:hover{
+                                        background-color: lightgray;
+                                    }
+                                    &:active{
+                                        border: solid black 1px;
+                                        border-radius: 0%;
+                                        background-color: lightgray;
+                                    }
+                                }
+                                .bbar{
+                                    padding-left: 12px;
+                                    width: 618px;
+                                    height: 30px;
+                                    padding-bottom: 46px;
+                                    border: solid black 1px;
+                                    border-radius: 0%;
+                                    &:hover{
+                                        background-color: lightgray;
+                                    }
+                                    &:active{
+                                        border: solid black 1px;
+                                        border-radius: 0%;
+                                        background-color: lightgray;
+                                    }
+                                }
+                            }
+                        }
+                        div{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 5px;
+                            margin-bottom: 14px;
+                            div{
+                                display: flex;
+                                flex-direction: column;
+                                label{
+                                    display: flex;
+                                    align-items: flex-start;
+                                    justify-content: flex-start;
+                                    @extend %font_two;
+                                    font-size: larger;
+                                    font-weight: 100;
+                                }
+                                .sbar{
+                                    height: 30px;
+                                    width: 288px;
+                                    padding-left: 12px;
+                                    border: solid black 1px;
+                                    border-radius: 0%;
+                                    &:hover{
+                                        background-color: lightgray;
+                                    }
+                                    &:active{
+                                        border: solid black 1px;
+                                        border-radius: 0%;
+                                        background-color: lightgray;
+                                    }
+                                }
+                                .sbar.one{
+                                    margin-right: 19px;
+                                }
+                            }
+                        }
+                        section{
+                            display: flex;
+                            justify-content: flex-end;
+                            button{
+                                @extend %font_two;
+                                height: 40px;
+                                width: 150px;
+                                border-radius: 0%;
+                                border: solid black 1px;
+                                color: white;
+                                background-color: black;
+                                margin-right: 19px;
+                                &:hover{
+                                    background-color: lightgrey;
+                                    color: black;
+                                    transition: all 0.2s ease-in-out;
+                                }
+                            }
+                        }
+                        .ic{
+                            display: flex;
+                            p{
+                                @extend %font_two;
+                                font-weight: 100;
+                                font-size: 16px;
+                                width: 217px;
+                            }
+                            div{
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-direction: row;
+                                a{
+                                    margin: 0%;
+                                    margin-top: 10px;
+                                    font-size: 28px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            background-color: rgb(158, 57, 39);
+            padding: 16px;
+            color: white;
+            @extend %font_two;
+            font-weight: 100;
+            font-size: 14px;
+            a{
+                color: white;
+                margin-left: 4px;
+                @extend %font_two;
+                font-weight: 100;
+                font-size: 13px;
             }
         }
     }

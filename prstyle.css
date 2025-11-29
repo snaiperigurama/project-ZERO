@@ -1,0 +1,131 @@
+html body header section .bigdot a {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html body footer a, html body footer, html body main div .back, html body main div .next {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html body main h1 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 4s ease-in-out;
+}
+html body {
+  margin: 0;
+  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}
+html body header {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+html body header video {
+  position: absolute;
+  z-index: -1;
+  padding-top: 40%;
+  bottom: 1px;
+}
+html body header .pac a {
+  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+html body header .pac a:hover {
+  color: rgb(212, 10, 37);
+  transition: 0.25s ease-in-out;
+}
+html body header section .bigdot {
+  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  width: 85px;
+  height: 85px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+html body header section .bigdot a {
+  font-size: 55px;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+}
+html body header section p {
+  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  font-size: 25px;
+}
+html body main {
+  margin-top: 2cm;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+html body main h1 {
+  font-weight: 700;
+  font-size: 69px;
+}
+html body main div {
+  position: relative;
+}
+html body main div .next {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+html body main div .next:hover {
+  color: rgb(133, 86, 25);
+  transition: all 0.2s ease-in-out;
+}
+html body main div .back {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+html body main div .back:hover {
+  color: rgb(133, 86, 25);
+  transition: all 0.2s ease-in-out;
+}
+html body main div .back::before {
+  content: "< ";
+}
+html body footer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: rgb(158, 57, 39);
+  padding: 16px;
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+}
+html body footer a {
+  color: white;
+  margin-left: 4px;
+  font-weight: 100;
+  font-size: 13px;
+}/*# sourceMappingURL=prstyle.css.map */
