@@ -84,6 +84,11 @@ html{
             margin-top: 2cm;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            section{
+                img{
+                    width: 33vw;
+                }
+            }
             h1{
                 @extend %font_three;
                 font-weight: 700;

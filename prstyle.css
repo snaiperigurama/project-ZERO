@@ -77,6 +77,9 @@ html body main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+html body main section img {
+  width: 33vw;
+}
 html body main h1 {
   font-weight: 700;
   font-size: 69px;

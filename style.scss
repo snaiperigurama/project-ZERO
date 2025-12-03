@@ -108,7 +108,7 @@ html{
                     display: grid;
                     grid-template-columns: 30% 30% 30%;
                     gap: 1.4cm;
-                    margin-left: 82.5px;
+                    margin-left: 4.1%;
                     a{
                         display: flex;
                         justify-content: center;
@@ -120,12 +120,16 @@ html{
                             @extend  %font_two;
                             font-weight: 100;
                             font-size: 28px;
+                            &:hover{
+                                color: rgba(0, 0, 0, 0.521);
+                                transition: all 0.2s ease-in-out;
+                            }
                         }
                         .photos{
-                            margin : 20px;
+                            margin : 1vw;
                             background-color: black;
                             img{
-                                width: 560px;
+                                width: 30.5vw;
                                 height: 360px;
                                 &:hover{
                                     opacity: 50%;
@@ -168,9 +172,10 @@ html{
             .contact{
                 margin-top: 100px;
                 .image{
-                    .img{
-                        width: 100vw;
-                        margin: 0;
+                    width: calc(100vw - 15px);
+                    img{
+                        width: calc(100vw - 15px);
+                        max-height: 1080px;
                     }
                 }
                 .log-in{
