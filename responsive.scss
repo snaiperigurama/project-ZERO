@@ -5,9 +5,31 @@
         flex-direction: column;
     }
     .grid{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        margin: 0 !important;
+        a{
+            margin-top: 1cm;
+            img{
+                width: 60vw !important;
+                height: auto !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sbar{
+        width: 140px !important;
+    }
+    .bar{
+        width: 309px !important;
+    }
+    .bbar{
+        width: 309px !important;
+    }
+    .sbar.one{
+        margin-right: 8.5px !important;
     }
 }

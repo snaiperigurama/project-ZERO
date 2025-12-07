@@ -27,9 +27,11 @@ html body header {
   flex-direction: column;
 }
 html body header video {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
   position: absolute;
   z-index: -1;
-  padding-top: 40%;
   bottom: 1px;
 }
 html body header .pac a {
@@ -98,7 +100,7 @@ html body main .project .grid {
   margin-top: 60px;
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  gap: 1.4cm;
+  gap: 3.4vw;
   margin-left: 4.1%;
 }
 html body main .project .grid a {
@@ -150,10 +152,12 @@ html body main .about .info a {
   margin-bottom: 1.5cm;
 }
 html body main .about .info p {
-  width: 690px;
+  width: auto;
   font-size: 16px;
   font-weight: 100;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 html body main .contact {
   margin-top: 100px;
@@ -171,6 +175,8 @@ html body main .contact .log-in {
   flex-direction: column;
 }
 html body main .contact .log-in a {
+  display: flex;
+  justify-self: center;
   font-size: 97px;
   color: black;
   text-decoration: none;
