@@ -125,7 +125,6 @@ html body main .project .grid a .photos {
 }
 html body main .project .grid a .photos img {
   width: 30.5vw;
-  height: 360px;
 }
 html body main .project .grid a .photos img:hover {
   opacity: 50%;
