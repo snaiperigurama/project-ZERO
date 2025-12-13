@@ -24,18 +24,22 @@ html{
         margin: 0;
         z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
         header{
+            padding-bottom: 13vh;
             margin-top: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            video{
-                display: flex;
-                justify-self: flex-start;
-                align-self: flex-start;
+            .absolute{
                 position: absolute;
-                z-index: -1;
-                bottom: 1px;
+                top: 1px;
+                .video_flex{
+                    display: flex;
+                    video{
+                        z-index: -1;
+                        width: calc(100vw - 15px);
+                    }
+                }
             }
             .pac{
                 a{

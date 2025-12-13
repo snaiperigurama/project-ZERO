@@ -20,19 +20,23 @@ html body {
   z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
 }
 html body header {
+  padding-bottom: 13vh;
   margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-html body header video {
-  display: flex;
-  justify-self: flex-start;
-  align-self: flex-start;
+html body header .absolute {
   position: absolute;
+  top: 1px;
+}
+html body header .absolute .video_flex {
+  display: flex;
+}
+html body header .absolute .video_flex video {
   z-index: -1;
-  bottom: 1px;
+  width: calc(100vw - 15px);
 }
 html body header .pac a {
   z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
