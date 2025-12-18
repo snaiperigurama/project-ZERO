@@ -1,4 +1,7 @@
 @media screen and (max-width: 1000px) {
+  .absolute {
+    top: 50vh !important;
+  }
   .pac {
     display: flex;
     align-items: center;

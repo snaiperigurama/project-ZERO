@@ -1,0 +1,214 @@
+// $Variables
+
+
+// %PlaceHolders
+%font_one {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+%font_two {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+// Style
+
+html{
+    scroll-behavior: smooth;
+    transition: all 4s ease-in-out;
+    body{
+        margin: 0;
+        z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+        header{
+            padding-bottom: 13vh;
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .pac{
+                a{
+                    z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    text-decoration: none;
+                    font-size: 40px;
+                    color: black;
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    &:hover{
+                        color: rgb(212, 10, 37);
+                        transition: 0.25s ease-in-out;
+                    }
+                }
+            }
+            section{
+                .bigdot{
+                    z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    width: 85px;
+                    height: 85px;
+                    background-color: black;
+                    color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    a{
+                        font-size: 55px;
+                        font-weight: 100;
+                        color: white;
+                        text-decoration: none;
+                        @extend %font_one;
+                    }
+                }
+                p{
+                    z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+                    font-size: 25px;
+                }
+            }
+        }
+        main{
+            .text{
+                display: flex;
+                justify-self: center;
+                align-self: flex-start;
+                @extend %font_two;
+                font-size: 32px;
+                font-weight: 100;
+                margin-bottom: 15vh;
+            }
+            section{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                .img1{
+                    position: absolute;
+                    border: 1px solid black;
+                    border-radius: 16px;
+                    left: 10vw;
+                    width: 15vw;
+                }
+                .img2{
+                    position: absolute;
+                    border: 1px solid black;
+                    border-radius: 16px;
+                    right: 10vw;
+                    top: 600px;
+                    width: 15vw;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    label{
+                        @extend %font_two;
+                        font-size: 20px;
+                        display: flex;
+                    }
+                    .input{
+                        width: 30vw;
+                        height: 3vh;
+                        border: 1px solid black;
+                        border-radius: 32px;
+                        padding-left: 10px;
+                        &:hover{
+                            background-color: lightgray;
+                            border: 1px solid black;
+                            transition: all 0.2s ease-in-out;
+                        }
+                        &:focus{
+                            background-color: lightgray;
+                            border: 1px solid black;
+                        }
+                    }
+                    .upload{
+                        margin-left: 0;
+                        .file-label{
+                            display: inline;
+                        }
+                        .file{
+                            margin-top: 10px;
+                            display: block;
+                            border: 0;
+                            padding-bottom: 10px;
+                        }
+                    }
+                    button{
+                        color: white;
+                        background-color: black;
+                        padding: 1vh 2vw;
+                        border: 1px solid black;
+                        border-radius: 8px;
+                        &:hover{
+                            color: black;
+                            background-color: lightgray;
+                            padding-left: calc(2vw + 3px);
+                            padding-right: calc(2vw + 3px);
+                            padding-top: calc(0.5vw + 1.5px);
+                            padding-bottom: calc(0.5vw + 1.5px);
+                            transition: all 1s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            background-color: rgb(158, 57, 39);
+            padding: 16px;
+            color: white;
+            @extend %font_two;
+            font-weight: 100;
+            font-size: 14px;
+            a{
+                color: white;
+                margin-left: 4px;
+                @extend %font_two;
+                font-weight: 100;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .pac{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text{
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .text{
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .text{
+        font-size: 20px !important;
+    }
+    label{
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text{
+        font-size: 15px !important;
+    }
+}
