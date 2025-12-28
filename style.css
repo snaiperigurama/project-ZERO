@@ -31,6 +31,7 @@ html body header .space {
   display: none;
 }
 html body header .absolute {
+  z-index: -1;
   position: absolute;
   top: 1px;
 }
@@ -42,7 +43,7 @@ html body header .absolute .video_flex video {
   width: calc(100vw - 15px);
 }
 html body header .pac a {
-  z-index: 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  z-index: 10;
   text-decoration: none;
   font-size: 40px;
   color: black;
